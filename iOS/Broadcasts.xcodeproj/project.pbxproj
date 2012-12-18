@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9208C9B916664D95000EC072 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208C9B816664D95000EC072 /* UIKit.framework */; };
+		9208C9BB16664D95000EC072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208C9BA16664D95000EC072 /* Foundation.framework */; };
+		9208C9BD16664D95000EC072 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208C9BC16664D95000EC072 /* CoreGraphics.framework */; };
+		9208C9F716664DF3000EC072 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208C9F616664DF3000EC072 /* CoreLocation.framework */; };
+		9208C9F916664DFD000EC072 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208C9F816664DFD000EC072 /* AdSupport.framework */; };
+		9208C9FB16664E07000EC072 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208C9FA16664E06000EC072 /* Social.framework */; };
+		9208C9FD16664E10000EC072 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208C9FC16664E10000EC072 /* Accounts.framework */; };
+		9208C9FF16664E1B000EC072 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208C9FE16664E1B000EC072 /* libsqlite3.dylib */; };
+		9208CA0116664E2B000EC072 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA0016664E2B000EC072 /* StoreKit.framework */; };
+		9208CA0316664E34000EC072 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA0216664E34000EC072 /* QuartzCore.framework */; };
+		9208CA0516664E3D000EC072 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA0416664E3D000EC072 /* libz.1.1.3.dylib */; };
+		9208CA0716664E46000EC072 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA0616664E46000EC072 /* Security.framework */; };
+		9208CA0916664E4D000EC072 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA0816664E4D000EC072 /* AudioToolbox.framework */; };
+		9208CA0B16664E56000EC072 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA0A16664E56000EC072 /* MobileCoreServices.framework */; };
+		9208CA0D16664E5F000EC072 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA0C16664E5F000EC072 /* SystemConfiguration.framework */; };
+		9208CA0F16664E68000EC072 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA0E16664E68000EC072 /* CFNetwork.framework */; };
+		9208CA1316664EF3000EC072 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA1216664EF3000EC072 /* Parse.framework */; };
+		9208CA151666EC83000EC072 /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA141666EC83000EC072 /* Opentok.framework */; };
+		9208CA1B1666ECBD000EC072 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA1A1666ECBD000EC072 /* CoreTelephony.framework */; };
+		9208CA1D1666ECD2000EC072 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA1C1666ECD2000EC072 /* CoreMedia.framework */; };
+		9208CA1F1666ED0F000EC072 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA1E1666ED0F000EC072 /* CoreAudio.framework */; };
+		9208CA211666ED19000EC072 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA201666ED19000EC072 /* CoreVideo.framework */; };
+		9208CA231666ED24000EC072 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA221666ED24000EC072 /* OpenGLES.framework */; };
+		9208CA251666ED2F000EC072 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA241666ED2F000EC072 /* libz.dylib */; };
+		9208CA271666ED40000EC072 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA261666ED40000EC072 /* libstdc++.dylib */; };
+		9208CA291666ED4D000EC072 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9208CA281666ED4D000EC072 /* AVFoundation.framework */; };
+		9216613B16810E2700B2A41B /* BroadcastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9216613116810E2600B2A41B /* BroadcastCell.m */; };
+		9216613C16810E2700B2A41B /* BroadcastCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9216613316810E2600B2A41B /* BroadcastCreationViewController.m */; };
+		9216613D16810E2700B2A41B /* BroadcastsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9216613516810E2600B2A41B /* BroadcastsAppDelegate.m */; };
+		9216613E16810E2700B2A41B /* BroadcastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9216613716810E2700B2A41B /* BroadcastTableViewController.m */; };
+		9216613F16810E2700B2A41B /* BroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9216613916810E2700B2A41B /* BroadcastViewController.m */; };
+		9216614716810E6600B2A41B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9216614216810E6600B2A41B /* Default-568h@2x.png */; };
+		9216614816810E6600B2A41B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9216614316810E6600B2A41B /* Default.png */; };
+		9216614916810E6600B2A41B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9216614416810E6600B2A41B /* Default@2x.png */; };
+		9216614A16810E6600B2A41B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9216614516810E6600B2A41B /* main.m */; };
+		9216614D16810EA100B2A41B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9216614B16810EA100B2A41B /* InfoPlist.strings */; };
+		9216615216810EB400B2A41B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9216614E16810EB400B2A41B /* MainStoryboard_iPad.storyboard */; };
+		9216615316810EB400B2A41B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9216615016810EB400B2A41B /* MainStoryboard_iPhone.storyboard */; };
+		9250F72A1672A8D10072AFC4 /* opentok.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9250F7291672A8D10072AFC4 /* opentok.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9208C9B416664D95000EC072 /* Broadcasts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Broadcasts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9208C9B816664D95000EC072 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9208C9BA16664D95000EC072 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9208C9BC16664D95000EC072 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9208C9DF16664D95000EC072 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9208C9F616664DF3000EC072 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9208C9F816664DFD000EC072 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9208C9FA16664E06000EC072 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9208C9FC16664E10000EC072 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		9208C9FE16664E1B000EC072 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9208CA0016664E2B000EC072 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9208CA0216664E34000EC072 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9208CA0416664E3D000EC072 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		9208CA0616664E46000EC072 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9208CA0816664E4D000EC072 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9208CA0A16664E56000EC072 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9208CA0C16664E5F000EC072 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9208CA0E16664E68000EC072 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9208CA1216664EF3000EC072 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9208CA141666EC83000EC072 /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Opentok.framework; sourceTree = "<group>"; };
+		9208CA1A1666ECBD000EC072 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9208CA1C1666ECD2000EC072 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9208CA1E1666ED0F000EC072 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		9208CA201666ED19000EC072 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9208CA221666ED24000EC072 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		9208CA241666ED2F000EC072 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9208CA261666ED40000EC072 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		9208CA281666ED4D000EC072 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9216613016810E2600B2A41B /* BroadcastCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BroadcastCell.h; path = Broadcasts/BroadcastCell.h; sourceTree = SOURCE_ROOT; };
+		9216613116810E2600B2A41B /* BroadcastCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BroadcastCell.m; path = Broadcasts/BroadcastCell.m; sourceTree = SOURCE_ROOT; };
+		9216613216810E2600B2A41B /* BroadcastCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BroadcastCreationViewController.h; path = Broadcasts/BroadcastCreationViewController.h; sourceTree = SOURCE_ROOT; };
+		9216613316810E2600B2A41B /* BroadcastCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BroadcastCreationViewController.m; path = Broadcasts/BroadcastCreationViewController.m; sourceTree = SOURCE_ROOT; };
+		9216613416810E2600B2A41B /* BroadcastsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BroadcastsAppDelegate.h; path = Broadcasts/BroadcastsAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		9216613516810E2600B2A41B /* BroadcastsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BroadcastsAppDelegate.m; path = Broadcasts/BroadcastsAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		9216613616810E2700B2A41B /* BroadcastTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BroadcastTableViewController.h; path = Broadcasts/BroadcastTableViewController.h; sourceTree = SOURCE_ROOT; };
+		9216613716810E2700B2A41B /* BroadcastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BroadcastTableViewController.m; path = Broadcasts/BroadcastTableViewController.m; sourceTree = SOURCE_ROOT; };
+		9216613816810E2700B2A41B /* BroadcastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BroadcastViewController.h; path = Broadcasts/BroadcastViewController.h; sourceTree = SOURCE_ROOT; };
+		9216613916810E2700B2A41B /* BroadcastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BroadcastViewController.m; path = Broadcasts/BroadcastViewController.m; sourceTree = SOURCE_ROOT; };
+		9216613A16810E2700B2A41B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Broadcasts/Constants.h; sourceTree = SOURCE_ROOT; };
+		9216614016810E6600B2A41B /* Broadcasts-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Broadcasts-Info.plist"; path = "Broadcasts/Broadcasts-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9216614116810E6600B2A41B /* Broadcasts-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Broadcasts-Prefix.pch"; path = "Broadcasts/Broadcasts-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		9216614216810E6600B2A41B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Broadcasts/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		9216614316810E6600B2A41B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Broadcasts/Default.png; sourceTree = SOURCE_ROOT; };
+		9216614416810E6600B2A41B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Broadcasts/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		9216614516810E6600B2A41B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Broadcasts/main.m; sourceTree = SOURCE_ROOT; };
+		9216614C16810EA100B2A41B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Broadcasts/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		9216614F16810EB400B2A41B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Broadcasts/en.lproj/MainStoryboard_iPad.storyboard; sourceTree = SOURCE_ROOT; };
+		9216615116810EB400B2A41B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Broadcasts/en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
+		9250F7291672A8D10072AFC4 /* opentok.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = opentok.bundle; path = Opentok.framework/Versions/A/Resources/opentok.bundle; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9208C9B116664D95000EC072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9208CA291666ED4D000EC072 /* AVFoundation.framework in Frameworks */,
+				9208CA271666ED40000EC072 /* libstdc++.dylib in Frameworks */,
+				9208CA251666ED2F000EC072 /* libz.dylib in Frameworks */,
+				9208CA231666ED24000EC072 /* OpenGLES.framework in Frameworks */,
+				9208CA211666ED19000EC072 /* CoreVideo.framework in Frameworks */,
+				9208CA1F1666ED0F000EC072 /* CoreAudio.framework in Frameworks */,
+				9208CA0716664E46000EC072 /* Security.framework in Frameworks */,
+				9208CA1D1666ECD2000EC072 /* CoreMedia.framework in Frameworks */,
+				9208CA1B1666ECBD000EC072 /* CoreTelephony.framework in Frameworks */,
+				9208CA151666EC83000EC072 /* Opentok.framework in Frameworks */,
+				9208CA1316664EF3000EC072 /* Parse.framework in Frameworks */,
+				9208CA0F16664E68000EC072 /* CFNetwork.framework in Frameworks */,
+				9208CA0D16664E5F000EC072 /* SystemConfiguration.framework in Frameworks */,
+				9208CA0B16664E56000EC072 /* MobileCoreServices.framework in Frameworks */,
+				9208CA0916664E4D000EC072 /* AudioToolbox.framework in Frameworks */,
+				9208CA0516664E3D000EC072 /* libz.1.1.3.dylib in Frameworks */,
+				9208CA0316664E34000EC072 /* QuartzCore.framework in Frameworks */,
+				9208CA0116664E2B000EC072 /* StoreKit.framework in Frameworks */,
+				9208C9FF16664E1B000EC072 /* libsqlite3.dylib in Frameworks */,
+				9208C9FD16664E10000EC072 /* Accounts.framework in Frameworks */,
+				9208C9FB16664E07000EC072 /* Social.framework in Frameworks */,
+				9208C9F916664DFD000EC072 /* AdSupport.framework in Frameworks */,
+				9208C9F716664DF3000EC072 /* CoreLocation.framework in Frameworks */,
+				9208C9B916664D95000EC072 /* UIKit.framework in Frameworks */,
+				9208C9BB16664D95000EC072 /* Foundation.framework in Frameworks */,
+				9208C9BD16664D95000EC072 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9208C9A916664D95000EC072 = {
+			isa = PBXGroup;
+			children = (
+				9208C9BE16664D95000EC072 /* Broadcasts */,
+				9208C9B716664D95000EC072 /* Frameworks */,
+				9208C9B516664D95000EC072 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9208C9B516664D95000EC072 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9208C9B416664D95000EC072 /* Broadcasts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9208C9B716664D95000EC072 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9208CA281666ED4D000EC072 /* AVFoundation.framework */,
+				9208CA261666ED40000EC072 /* libstdc++.dylib */,
+				9208CA241666ED2F000EC072 /* libz.dylib */,
+				9208CA221666ED24000EC072 /* OpenGLES.framework */,
+				9208CA201666ED19000EC072 /* CoreVideo.framework */,
+				9208CA1E1666ED0F000EC072 /* CoreAudio.framework */,
+				9208CA1C1666ECD2000EC072 /* CoreMedia.framework */,
+				9208CA1A1666ECBD000EC072 /* CoreTelephony.framework */,
+				9208CA141666EC83000EC072 /* Opentok.framework */,
+				9208CA1216664EF3000EC072 /* Parse.framework */,
+				9208CA0E16664E68000EC072 /* CFNetwork.framework */,
+				9208CA0C16664E5F000EC072 /* SystemConfiguration.framework */,
+				9208CA0A16664E56000EC072 /* MobileCoreServices.framework */,
+				9208CA0816664E4D000EC072 /* AudioToolbox.framework */,
+				9208CA0616664E46000EC072 /* Security.framework */,
+				9208CA0416664E3D000EC072 /* libz.1.1.3.dylib */,
+				9208CA0216664E34000EC072 /* QuartzCore.framework */,
+				9208CA0016664E2B000EC072 /* StoreKit.framework */,
+				9208C9FE16664E1B000EC072 /* libsqlite3.dylib */,
+				9208C9FC16664E10000EC072 /* Accounts.framework */,
+				9208C9FA16664E06000EC072 /* Social.framework */,
+				9208C9F816664DFD000EC072 /* AdSupport.framework */,
+				9208C9F616664DF3000EC072 /* CoreLocation.framework */,
+				9208C9B816664D95000EC072 /* UIKit.framework */,
+				9208C9BA16664D95000EC072 /* Foundation.framework */,
+				9208C9BC16664D95000EC072 /* CoreGraphics.framework */,
+				9208C9DF16664D95000EC072 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9208C9BE16664D95000EC072 /* Broadcasts */ = {
+			isa = PBXGroup;
+			children = (
+				9216614E16810EB400B2A41B /* MainStoryboard_iPad.storyboard */,
+				9216615016810EB400B2A41B /* MainStoryboard_iPhone.storyboard */,
+				9216613016810E2600B2A41B /* BroadcastCell.h */,
+				9216613116810E2600B2A41B /* BroadcastCell.m */,
+				9216613216810E2600B2A41B /* BroadcastCreationViewController.h */,
+				9216613316810E2600B2A41B /* BroadcastCreationViewController.m */,
+				9216613416810E2600B2A41B /* BroadcastsAppDelegate.h */,
+				9216613516810E2600B2A41B /* BroadcastsAppDelegate.m */,
+				9216613616810E2700B2A41B /* BroadcastTableViewController.h */,
+				9216613716810E2700B2A41B /* BroadcastTableViewController.m */,
+				9216613816810E2700B2A41B /* BroadcastViewController.h */,
+				9216613916810E2700B2A41B /* BroadcastViewController.m */,
+				9216613A16810E2700B2A41B /* Constants.h */,
+				9208C9BF16664D95000EC072 /* Supporting Files */,
+			);
+			name = Broadcasts;
+			path = OpenTokParseSample;
+			sourceTree = "<group>";
+		};
+		9208C9BF16664D95000EC072 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9250F7291672A8D10072AFC4 /* opentok.bundle */,
+				9216614016810E6600B2A41B /* Broadcasts-Info.plist */,
+				9216614116810E6600B2A41B /* Broadcasts-Prefix.pch */,
+				9216614B16810EA100B2A41B /* InfoPlist.strings */,
+				9216614216810E6600B2A41B /* Default-568h@2x.png */,
+				9216614316810E6600B2A41B /* Default.png */,
+				9216614416810E6600B2A41B /* Default@2x.png */,
+				9216614516810E6600B2A41B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9208C9B316664D95000EC072 /* Broadcasts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9208C9F016664D96000EC072 /* Build configuration list for PBXNativeTarget "Broadcasts" */;
+			buildPhases = (
+				9208C9B016664D95000EC072 /* Sources */,
+				9208C9B116664D95000EC072 /* Frameworks */,
+				9208C9B216664D95000EC072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Broadcasts;
+			productName = OpenTokParseSample;
+			productReference = 9208C9B416664D95000EC072 /* Broadcasts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9208C9AB16664D95000EC072 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OTPS;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Ankur Oberoi";
+			};
+			buildConfigurationList = 9208C9AE16664D95000EC072 /* Build configuration list for PBXProject "Broadcasts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9208C9A916664D95000EC072;
+			productRefGroup = 9208C9B516664D95000EC072 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9208C9B316664D95000EC072 /* Broadcasts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9208C9B216664D95000EC072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9250F72A1672A8D10072AFC4 /* opentok.bundle in Resources */,
+				9216614716810E6600B2A41B /* Default-568h@2x.png in Resources */,
+				9216614816810E6600B2A41B /* Default.png in Resources */,
+				9216614916810E6600B2A41B /* Default@2x.png in Resources */,
+				9216614D16810EA100B2A41B /* InfoPlist.strings in Resources */,
+				9216615216810EB400B2A41B /* MainStoryboard_iPad.storyboard in Resources */,
+				9216615316810EB400B2A41B /* MainStoryboard_iPhone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9208C9B016664D95000EC072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9216613B16810E2700B2A41B /* BroadcastCell.m in Sources */,
+				9216613C16810E2700B2A41B /* BroadcastCreationViewController.m in Sources */,
+				9216613D16810E2700B2A41B /* BroadcastsAppDelegate.m in Sources */,
+				9216613E16810E2700B2A41B /* BroadcastTableViewController.m in Sources */,
+				9216613F16810E2700B2A41B /* BroadcastViewController.m in Sources */,
+				9216614A16810E6600B2A41B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9216614B16810EA100B2A41B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9216614C16810EA100B2A41B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9216614E16810EB400B2A41B /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9216614F16810EB400B2A41B /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		9216615016810EB400B2A41B /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9216615116810EB400B2A41B /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9208C9EE16664D96000EC072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		9208C9EF16664D96000EC072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		9208C9F116664D96000EC072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Broadcasts/Broadcasts-Prefix.pch";
+				INFOPLIST_FILE = "Broadcasts/Broadcasts-Info.plist";
+				PRODUCT_NAME = Broadcasts;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9208C9F216664D96000EC072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Broadcasts/Broadcasts-Prefix.pch";
+				INFOPLIST_FILE = "Broadcasts/Broadcasts-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Broadcasts;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9208C9AE16664D95000EC072 /* Build configuration list for PBXProject "Broadcasts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9208C9EE16664D96000EC072 /* Debug */,
+				9208C9EF16664D96000EC072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9208C9F016664D96000EC072 /* Build configuration list for PBXNativeTarget "Broadcasts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9208C9F116664D96000EC072 /* Debug */,
+				9208C9F216664D96000EC072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9208C9AB16664D95000EC072 /* Project object */;
+}
