@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Broadcasts": {
+            "applicationId": "", 
+            "masterKey": ""
+        }, 
+        "_default": {
+            "link": "Broadcasts"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.1.13"
+    }
+}
