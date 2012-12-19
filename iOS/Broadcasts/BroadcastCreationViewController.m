@@ -47,9 +47,12 @@
         // Create the new Broadcast object
         PFObject *newBroadcast = [PFObject objectWithClassName:@"Broadcast"];
         newBroadcast[@"title"] = self.titleField.text;
-        // TODO: Add an owner property to a broadcast
+        newBroadcast[@"owner"] = [PFUser currentUser];
         
-        // TODO: Set the access control for the new Broadcast
+        // Set the access control for the new Broadcast
+        PFACL *acl = [PFACL ACLWithUser:[PFUser currentUser]];
+        [acl setPublicReadAccess:YES];
+        newBroadcast.ACL = acl;
         
         // Save the new Broadcast
         [newBroadcast saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {

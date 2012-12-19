@@ -143,8 +143,7 @@
      cell.dateLabel.text = [NSDateFormatter localizedStringFromDate:object.createdAt
                                                           dateStyle:NSDateFormatterMediumStyle
                                                           timeStyle:NSDateFormatterShortStyle];
-     // TODO: Indicate the owner
-     cell.ownerLabel.hidden = YES;
+     cell.ownerLabel.hidden = ![[(PFUser *)object[@"owner"] objectId] isEqual:[[PFUser currentUser] objectId]];
      
      return cell;
  }

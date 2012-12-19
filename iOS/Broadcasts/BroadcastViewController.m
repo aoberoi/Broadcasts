@@ -19,6 +19,7 @@
 - (void)willEnterForeground;
 - (void)addVideoViewConstraints:(UIView *)videoView;
 - (void)connectToBroadcast;
+- (BOOL)isBroadcastOwner;
 - (void)ensureSessionDisconnectedBeforeBlock:(void (^)(void))resumeBlock;
 @end
 
@@ -114,12 +115,22 @@
     if ( !( self.session.sessionConnectionStatus == OTSessionConnectionStatusConnected ||
            self.session.sessionConnectionStatus == OTSessionConnectionStatusConnecting   ) ) {
         
-        // TODO: Get a token by calling Parse Cloud Code function, then connect to the OpenTok Session
+        // Get a token by calling Parse Cloud Code function
+        [PFCloud callFunctionInBackground:@"getBroadcastToken"
+                           withParameters:@{ @"broadcast" : self.broadcast.objectId }
+                                    block:^(NSString *token, NSError *error) {
+                                        if (!error) {
+                                            [self.session connectWithApiKey:kOpentokApiKey token:token];
+                                            [self configureView];
+                                        }
+                                    }];
         
     }
 }
 
-// TODO: Helper method isBroadcastOwner
+- (BOOL)isBroadcastOwner {
+    return [[(PFUser *)self.broadcast[@"owner"] objectId] isEqual:[[PFUser currentUser] objectId]];
+}
 
 #pragma mark - Split View Delegate
 
@@ -141,9 +152,10 @@
 - (void)sessionDidConnect:(OTSession *)session
 {
     // Publish if this user owns this broadcast
-    // TODO: Figure out if the user can publish
-    OTPublisher *publisher = [[OTPublisher alloc] initWithDelegate:self];
-    [self.session publish:publisher];
+    if ([self isBroadcastOwner]) {
+        OTPublisher *publisher = [[OTPublisher alloc] initWithDelegate:self];
+        [self.session publish:publisher];
+    }
     [self configureView];
 }
 
@@ -164,8 +176,9 @@
 
 - (void)session:(OTSession *)session didReceiveStream:(OTStream *)stream
 {
-    // TODO: Figure out if the user should subscribe
-    __unused OTSubscriber *subscriber = [[OTSubscriber alloc] initWithStream:stream delegate:self];
+    if (![self isBroadcastOwner]) {
+        __unused OTSubscriber *subscriber = [[OTSubscriber alloc] initWithStream:stream delegate:self];
+    }
 }
 
 - (void)session:(OTSession *)session didDropStream:(OTStream *)stream

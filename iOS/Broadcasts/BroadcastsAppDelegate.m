@@ -18,6 +18,7 @@
     [Parse setApplicationId:kParseAppId clientKey:kParseClientKey];
     
     [PFUser enableAutomaticUser];
+    [[PFUser currentUser] saveInBackground];
     
     PFACL *defaultACL = [PFACL ACL];
     
